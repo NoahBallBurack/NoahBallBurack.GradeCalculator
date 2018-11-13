@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Noah's Grade Calculator</title>
+    <script src="script.js"></script>
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <link rel="stylesheet" href="styles.css">
+
+</head>
+<body>
+<div id="title">Grade Calculator</div>
+<table id="primary" class="tableStuff">
+    <tr>
+        <td class="tableStuff">
+            <div>Test Scores</div>
+        </td>
+        <td class="tableStuff">
+            <div>Test Weight</div>
+        </td>
+    </tr>
+    <tr>
+        <td class="tableStuff">
+            <input type="text" id="first0" value="70, 80, 85" class="textBox" style="background: yellow" onchange="determineColor('first0')">
+        </td>
+        <td class="tableStuff">
+            <input type="text" value="50" id="2-0" style="background: yellow" class="textBox">
+        </td>
+    </tr>
+</table>
+
+<input type="text" placeholder="Enter Category (e.g. 'Project')" id="category" class="textBox w3-hover-yellow">
+<button onclick="addRow()" class="w3-btn w3-circle w3-black w3-large" id="addRowButton  ">+</button>
+<br>
+<button class="btn btn-primary" onclick="calculateCurrentGrade()" id="currentButton">Calculate Current Grade</button>
+<div id="currentGrade"></div>
+
+<table id="secondary" class="tableStuff">
+    <tr>
+        <td class="tableStuff">
+            <div>Grade Desired</div>
+        </td>
+        <td class="tableStuff">
+            <div>Final Weight</div>
+        </td>
+    </tr>
+    <tr>
+        <td class="tableStuff">
+            <input type="text" value="90" id="gradeDesired" class="textBox" style="background: greenyellow" onchange="determineColor('gradeDesired')">
+        </td>
+        <td class="tableStuff">
+            <input type="text" value="50" id="finalWeight" class="textBox" style="background: greenyellow">
+        </td>
+    </tr>
+</table>
+
+<button class="btn btn-primary" onclick="calculateGradeNeeded()" id="gradeNeededButton">Calculate Grade Required</button>
+<div id="gradeNeeded"></div>
+<button onclick="window.location.reload()" class="w3-btn w3-round-large w3-small w3-gray" id="resetButton">Reset Page</button>
+
+</body>
+</html>

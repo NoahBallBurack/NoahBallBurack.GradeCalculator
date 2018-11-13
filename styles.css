@@ -1,0 +1,45 @@
+body{
+    text-align: center;
+    font-size: 15px;
+    font-family: "Comic Sans MS";
+    background: linear-gradient(to bottom right, red, yellow);
+}
+
+.tableStuff{
+    border: 4px solid blue;
+    width: 50%;
+}
+
+.textBox{
+    background: gold;
+    width: 100%;
+}
+
+#title{
+    font-size: 50px;
+}
+
+#primary, #secondary{
+    margin: auto;
+}
+
+#category{
+    width: 30%;
+}
+
+#resetButton{
+    margin-top: 4px;
+    margin-bottom: 400px;
+}
+
+#gradeNeededButton{
+    margin-top: 4px;
+}
+
+#currentButton{
+    margin-bottom: 4px;
+}
+
+#addRowButton{
+    margin-top: 2px;
+}
